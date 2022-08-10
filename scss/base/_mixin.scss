@@ -1,0 +1,23 @@
+@mixin flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+@mixin p-m ($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
+@mixin text-decoration {
+    text-decoration: none;
+    color: black;
+}
+@mixin letras {
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+    text-shadow: 2px 2px whitesmoke;
+}

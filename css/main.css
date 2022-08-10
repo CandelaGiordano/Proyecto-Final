@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: 'poppins';
+  color: black; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  margin: auto;
+  overflow: auto;
+  padding: 0 20px; }
+
+#navbar {
+  color: black; }
+
+header nav div h1 {
+  float: left;
+  padding-top: 1rem;
+  font-size: 1.2rem; }
+
+header nav div h2 {
+  font-size: 2.5rem;
+  float: right; }
+  header nav div h2 section ul li {
+    display: none;
+    font-size: 0.8rem;
+    color: black;
+    padding: 0.25rem; }
+
+header nav div h2:hover > section ul li {
+  display: block; }
+
+.mainPrincipal {
+  background: url("../img/fondo.gif");
+  height: 27rem;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .mainPrincipal div {
+    display: grid;
+    grid-template-areas: 'parrafo' 'img'; }
+    .mainPrincipal div p {
+      grid-area: parrafo;
+      float: left;
+      position: center;
+      margin-top: 6rem;
+      max-width: 12rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 0.1px 0.1px #a0a0a0; }
+    .mainPrincipal div img {
+      grid-area: img;
+      float: left;
+      margin-top: 1.3rem;
+      height: 8rem; }
+
+footer {
+  display: grid; }
+  footer div {
+    justify-content: left; }
+    footer div a img {
+      margin: 0.8rem; }
+
+.mainServicios {
+  background: url(../img/fondo-servicios.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .mainServicios .parrafoPrincipal {
+    max-width: 18rem;
+    float: center;
+    margin: 1rem 4rem 1rem 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    padding: 1rem 2rem; }
+  .mainServicios div {
+    display: grid;
+    grid-template-areas: 'img1 ingles' 'frances img2' 'img3 italiano' 'portugues img4'; }
+    .mainServicios div .img1 {
+      grid-area: img1;
+      height: 10rem;
+      margin: 1rem; }
+    .mainServicios div .p1 {
+      grid-area: ingles;
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke; }
+    .mainServicios div .img2 {
+      grid-area: img2;
+      height: 10rem;
+      margin: 1rem; }
+    .mainServicios div .p2 {
+      grid-area: frances;
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke; }
+    .mainServicios div .img3 {
+      grid-area: img3;
+      height: 10rem;
+      margin: 1rem; }
+    .mainServicios div .p3 {
+      grid-area: italiano;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke; }
+    .mainServicios div .img4 {
+      grid-area: img4;
+      height: 10rem;
+      margin: 1rem; }
+    .mainServicios div .p4 {
+      grid-area: portugues;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke; }
+
+.mainMetodo {
+  background-color: whitesmoke; }
+  .mainMetodo p {
+    margin: 2rem 2.5rem;
+    padding-top: 1rem;
+    font-size: 0.9rem; }
+
+.mainQuienesSomos img {
+  width: 100%;
+  position: center; }
+
+.mainQuienesSomos p {
+  margin: 2rem 2.5rem;
+  letter-spacing: 0.5px; }
+
+.mainContacto {
+  background-color: whitesmoke;
+  height: 25rem; }
+
+.formulario {
+  margin: 1.2rem; }
+  .formulario legend {
+    font-size: 2rem;
+    background-color: #DB241D; }
+  .formulario div {
+    font-size: 0.8rem;
+    margin: 1rem;
+    padding-top: 0.5rem; }
+    .formulario div input {
+      max-width: 8rem; }
+
+@media screen and (min-width: 768px) {
+  header nav div h1 {
+    font-size: 2.5rem;
+    margin-left: 3rem; }
+  header nav div h2 {
+    font-size: 5rem;
+    margin-right: 3rem; }
+    header nav div h2 section ul li {
+      font-size: 1.3rem; }
+  .mainPrincipal {
+    height: 55rem; }
+    .mainPrincipal div {
+      padding-top: 10rem; }
+      .mainPrincipal div p {
+        font-size: 2rem;
+        max-width: 24rem; }
+      .mainPrincipal div a img {
+        height: 12rem; }
+  .mainServicios .parrafoPrincipal {
+    display: none; }
+  .mainServicios div {
+    display: grid;
+    grid-template-areas: 'img1 ingles' 'frances img2' 'img3 italiano' 'portugues img4';
+    justify-content: space-around; }
+    .mainServicios div .img1 {
+      grid-area: img1;
+      height: 25rem;
+      margin: 5rem; }
+    .mainServicios div .p1 {
+      grid-area: ingles;
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke;
+      font-size: 1.8rem; }
+    .mainServicios div .img2 {
+      grid-area: img2;
+      height: 25rem;
+      margin: 5rem; }
+    .mainServicios div .p2 {
+      grid-area: frances;
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke;
+      font-size: 1.8rem; }
+    .mainServicios div .img3 {
+      grid-area: img3;
+      height: 25rem;
+      margin: 5rem; }
+    .mainServicios div .p3 {
+      grid-area: italiano;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke;
+      font-size: 1.8rem; }
+    .mainServicios div .img4 {
+      grid-area: img4;
+      height: 25rem;
+      margin: 5rem; }
+    .mainServicios div .p4 {
+      grid-area: portugues;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+      font-weight: bolder;
+      text-shadow: 2px 2px whitesmoke;
+      font-size: 1.8rem; }
+  .mainMetodo p {
+    font-size: 1.5rem;
+    max-width: 65rem;
+    margin-left: 4rem; }
+  .mainQuienesSomos {
+    display: grid;
+    grid-template-areas: 'parrafo img'; }
+    .mainQuienesSomos p {
+      grid-area: parrafo;
+      padding: 2rem 2rem;
+      font-size: 1.5rem; }
+    .mainQuienesSomos img {
+      grid-area: img;
+      height: 45rem; }
+  .mainContacto .formulario {
+    margin: 2rem; }
+    .mainContacto .formulario legend {
+      font-size: 2.3rem; }
+    .mainContacto .formulario div {
+      font-size: 1.5rem; }
+      .mainContacto .formulario div label {
+        font-size: 1.5rem;
+        padding-right: 1.5rem; }
+      .mainContacto .formulario div input {
+        max-width: 45rem;
+        font-size: 1rem; }
+  footer div a img {
+    padding-top: 1.5rem;
+    height: 4rem; } }
