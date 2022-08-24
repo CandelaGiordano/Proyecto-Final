@@ -75,6 +75,7 @@ header nav div h2:hover > section ul li{
             text-transform: uppercase;
             letter-spacing: 0.5px;
             font-weight: bolder;
+            color: nth($list: $colores, $n:2 );
             text-shadow: 0.1px 0.1px rgb(160, 160, 160);
         }
         img{
@@ -85,6 +86,53 @@ header nav div h2:hover > section ul li{
         }
     }
 }
+  
+    .parrafo2{
+        background-color: $color-principal;
+        margin: 0.7rem;
+        margin-top: -3.1rem;
+        margin-bottom: 2rem;
+        padding: 1.2rem;
+        color: nth($list: $colores, $n:2 );
+        float: center;
+        .primerP{
+        display: flex; 
+        font-size: 0.8rem;
+        }
+        .misionH2{
+            text-transform: uppercase;
+            padding: 1.2rem 5rem 0.8rem 5rem;
+        }
+        .misionP{
+            font-size: 0.8rem;
+        }
+    }
+    .sectionPrincipal{
+                display: contents;
+                
+        h3{
+            padding-top: 1.3rem;
+            margin-bottom: 0.2rem;
+            @include flex-center;
+            text-transform: uppercase;
+            font-size: 1rem;
+            background-color: nth($list: $colores, $n:3 );
+        }
+        h4{
+            padding-top: 1.3rem;
+            margin-bottom: 0.2rem;
+            @include flex-center;
+            text-transform: uppercase;
+            font-size: 1rem;
+            background-color: nth($list: $colores, $n:3 )
+        }
+        p{
+            @include flex-center;
+            padding: 0 1rem 0 1rem;
+            background-color: nth($list: $colores, $n:3 );
+            font-size: 0.8rem;           
+        }
+    }
 
 footer{
     display: grid;
@@ -98,7 +146,7 @@ footer{
 
 //main Servicios.html
 .mainServicios{
-    background: url(../img/fondo-servicios.jpg);
+    background: url(../img/fondo-servicios1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -177,6 +225,7 @@ footer{
         margin: 2rem 2.5rem;
         padding-top: 1rem;
         font-size: 0.9rem;
+        font-weight: bold;
     }
 }
 .mainQuienesSomos{
@@ -188,8 +237,11 @@ footer{
     p{
         margin: 2rem 2.5rem;
         letter-spacing: 0.5px;
+        font-weight: bold;
     }
 }
+
+
 //contacto
 .mainContacto{
     background-color: nth($list: $colores, $n:3 );
@@ -233,16 +285,91 @@ footer{
                 p {
                     font-size: 2rem;
                     max-width: 24rem;
+                    
                 }
                 a img{
                     height: 12rem;
                 }
             }
         }
-
+        .parrafo2{
+            margin: 1rem 3rem 1rem 3rem;
+            margin-top: -4.5rem;
+            margin-bottom: 2.7rem;
+            padding: 2.3rem;
+            display: block;
+            .misionH2{
+                padding: 1.3rem 12rem 1.3rem 12rem;
+            }
+            .primerP{
+                font-size: 1.2rem;
+            }
+            .misionP{
+                font-size: 1.2rem;
+            }
+        }
+        
+        .sectionPrincipal{
+            display: contents;
+            
+            .titulo{
+                @include flex-center;
+                text-transform: uppercase;
+                padding: 2rem;
+                background-color: nth($list: $colores, $n:3 );
+                margin: 0.2rem;
+            }
+            div{
+                padding: 1rem 2rem 1rem 2rem;
+                display: flex;
+                grid-template-areas: 'cal exp val'
+                                    'calP expP valP';
+                background-color: nth($list: $colores, $n:3 );
+                
+                .calidad{
+                    padding: 1rem;
+                    grid-area: cal;
+                    text-transform: uppercase;
+                }
+                .calidadP{
+                    padding: 1rem;
+                    grid-area: calP;
+                    font-size: 1.2rem;
+                }
+                .experiencia{
+                    padding: 1rem;
+                    grid-area: exp;
+                    text-transform: uppercase;
+                }
+                .experienciaP{
+                    padding: 1rem;
+                    grid-area: expP;
+                    font-size: 1.2rem;
+                }
+                .valores{
+                    padding: 1rem;
+                    grid-area: val;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                }
+                .valoresP{
+                grid-area: valP;
+                padding: 1rem;
+                font-size: 1.2rem;
+                }
+            }
+            
+        }
         .mainServicios{
             .parrafoPrincipal{
-                display: none;
+                font-size: 1.2rem;
+                max-width:  37rem;
+                margin: 1rem 4rem 1rem 4rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-weight: bolder;
+                background-color:  nth($list: $colores, $n:3 );
+                padding: 2.5rem 1.8rem;
             }
 
             div{
@@ -258,13 +385,14 @@ footer{
                     height: 25rem;
                     margin: 5rem;
                 }
+                
                 .p1{
                     grid-area: ingles;
                     display: flex;
                     align-items: center;
                     margin: 1rem;
                     @include letras;
-                    font-size: 1.8rem;
+                    font-size: 1.9rem;
                 }
                 .img2{
                     grid-area: img2;
@@ -273,11 +401,10 @@ footer{
                 }
                 .p2{
                     grid-area: frances;
-                    display: flex;
-                    align-items: center;
+                    padding-left: 15rem;
                     margin: 1rem;
                     @include letras;
-                    font-size: 1.8rem;
+                    font-size: 1.9rem;
                 }
                 .img3{
                     grid-area: img3;
@@ -290,7 +417,7 @@ footer{
                     display: flex;
                     align-items: center;
                     @include letras;
-                    font-size: 1.8rem;
+                    font-size: 1.9rem;
                 }
                 .img4{
                     grid-area: img4;
@@ -300,10 +427,9 @@ footer{
                 .p4{
                     grid-area: portugues;
                     margin: 1rem;
-                    display: flex;
-                    align-items: center;
+                    padding-left: 15rem;
                     @include letras;
-                    font-size: 1.8rem;
+                    font-size: 1.9rem;
                 }
             }
         }
@@ -329,7 +455,7 @@ footer{
                 height: 45rem;
             }
         }
-
+        
         .mainContacto{
             .formulario{
                 margin: 2rem;
@@ -355,5 +481,53 @@ footer{
                 padding-top: 1.5rem;
                 height: 4rem;
             }
+        }
+    }
+    
+    
+    @media screen and (min-width: 1280px){
+        .parrafo2{
+            margin: 1rem 6rem 1rem 6rem;
+            margin-top: -5.5rem;
+            margin-bottom: 3.7rem;
+            padding: 3.3rem;
+            display: block;
+            .misionH2{
+                font-size: 1.8rem;
+                padding-left: 23rem;
+                padding-right: 23rem;
+            }
+            .primerP{
+                font-size: 1.5rem;
+            }
+            .misionP{
+                font-size: 1.5rem;
+            }
+        }
+        
+        .sectionPrincipal{
+            h3{
+                font-size: 1.8rem;
+                font-weight: bolder;
+            }
+            div{
+                h3{
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                }
+                .valores{
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                }
+                p{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                }
+            
+            }
+            
+        }
+        .mainQuienesSomos{
+            font-size: 1.4rem;
         }
     }
